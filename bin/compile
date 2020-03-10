@@ -1,0 +1,10 @@
+#!/usr/bin/env bash
+# bin/compile BUILD_DIR CACHE_DIR ENV_DIR
+
+BUILD_DIR=$1
+
+echo "-----> Deleting the node_modules directory"
+rm -r $BUILD_DIR/node_modules
+
+echo "-----> Deleting the client/node_modules directory"
+rm -r $BUILD_DIR/client/node_modules

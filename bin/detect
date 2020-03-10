@@ -1,0 +1,11 @@
+#!/usr/bin/env bash
+# bin/detect BUILD_DIR
+
+BUILD_DIR=$1
+
+if [ -f $BUILD_DIR/package.json ]; then
+    echo "Node Cleanup"
+    exit 0
+fi
+
+exit 1
